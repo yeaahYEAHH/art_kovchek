@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --textcolor: #565d62;
+    --buttoncolor: #ffff;
+    --bordercolor: #d9e0e6;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199.98px) {
+    .page{
+        width: 700px;
+    }
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--textcolor);
+    font-family:  'Noto Sans', sans-serif; 
+}
+
+ul{
+    list-style: none;
+}
+
+.section{
+    text-align: center;
+    margin-top: 0.2em;
+    font-size: 0.83em;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-size: inherit;
+}
+
+.card{
+    margin-top: 1em;
+    text-align: center;
+    border: 1.5px solid var(--bordercolor); 
+    border-radius: 10px;
+}
+
+.title{
+    margin-top: 4px;
+    margin-bottom: 3px;
+    font-size: 1em;
+}
+
+.container-card{
+    display: flex;
+    width: 35em;
+    height: 20em;
+    align-items: center;
+}
+
+.link-c{
+    border: 1.5px solid var(--bordercolor); 
+    border-radius: 10px;
+}
+
+.first{
+    justify-content: center;
+}
+
+.footer-list{
+    border: 1.5px solid var(--bordercolor);      
+    border-radius: 10px;
+}
+
+hr{
+    padding: 0;
+	height: 1px;
+	border: none;
+	border-top: 1px solid var(--bordercolor);
+}
+
+header{
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+}
+
+.pic-c{
+    width: 10.4em;
+    height: 21.8em;
+    margin-top: 5em;
+    margin-top: 5em;
+    margin-left: 2em;
+    border: 1.5px solid var(--bordercolor);      
+    border-radius: 10px;
+}
+
+p{
+    text-align: left;
+    width: 21em;
+    padding-left: 61px;
+    font-size: 0.80em;
+
+}
