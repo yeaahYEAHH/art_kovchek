@@ -6,16 +6,10 @@
     --bordercolor: #d9e0e6;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1199.98px) {
-    .page{
-        width: 700px;
-    }
-}
-
 .page{
     display: flex;
     justify-content: center;
-    width: 1250px;
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
     color: var(--textcolor);
@@ -59,7 +53,7 @@ button{
 
 .container-card{
     display: flex;
-    width: 35em;
+    max-width: 35em;
     height: 20em;
     align-items: center;
 }
@@ -91,7 +85,7 @@ header{
 }
 
 .pic-c{
-    width: 10.4em;
+    max-width: 10.4em;
     height: 21.8em;
     margin-top: 5em;
     margin-top: 5em;
@@ -102,7 +96,7 @@ header{
 
 p{
     text-align: left;
-    width: 21em;
+    max-width: 21em;
     padding-left: 61px;
     font-size: 0.80em;
 
