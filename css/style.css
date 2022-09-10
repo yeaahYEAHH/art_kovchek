@@ -6,6 +6,13 @@
     --bordercolor: #d9e0e6;
 }
 
+
+/*Общие теги*/
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
 .page{
     display: flex;
     justify-content: center;
@@ -16,19 +23,67 @@
     font-family:  'Noto Sans', sans-serif; 
 }
 
-ul{
-    list-style: none;
-}
-
 .section{
     text-align: center;
     margin-top: 0.2em;
-    font-size: 0.83em;
+    font-size: 24px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
 }
 
 .link{
     text-decoration: none;
     color: inherit;
+}
+
+
+/*Боковое меню*/
+header{
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    position: sticky;/*делает меню фиксированным к вверху*/
+    top: 15px;/*регулирует расстояние во время прокрукти*/
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;/*нужно для лучшего отображение изображения(хоть и улучшает это чуть-чуть)*/
+}
+
+.footer-list{
+    border: 1.5px solid var(--bordercolor);      
+    border-radius: 20px;
+}
+
+.footer-item{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.footer-name{
+    padding-top: 15px;
+}
+
+
+
+
+
+/*Основное содержание*/
+.card{
+    margin-top: 1em;
+    text-align: center;
+    border: 1.5px solid var(--bordercolor); 
+    border-radius: 10px;
+}
+
+.container-card{
+    display: flex;
+    max-width: 35em;
+    align-items: center;
 }
 
 button{
@@ -38,38 +93,11 @@ button{
     font-size: inherit;
 }
 
-.card{
-    margin-top: 1em;
-    text-align: center;
-    border: 1.5px solid var(--bordercolor); 
-    border-radius: 10px;
-}
-
 .title{
     margin-top: 4px;
     margin-bottom: 3px;
     font-size: 1em;
-}
-
-.container-card{
-    display: flex;
-    max-width: 35em;
-    height: 20em;
-    align-items: center;
-}
-
-.link-c{
-    border: 1.5px solid var(--bordercolor); 
-    border-radius: 10px;
-}
-
-.first{
-    justify-content: center;
-}
-
-.footer-list{
-    border: 1.5px solid var(--bordercolor);      
-    border-radius: 10px;
+    font-weight: normal;
 }
 
 hr{
@@ -79,16 +107,10 @@ hr{
 	border-top: 1px solid var(--bordercolor);
 }
 
-header{
-    margin-top: 1.5em;
-    margin-right: 1.5em;
-}
-
 .pic-c{
-    max-width: 10.4em;
-    height: 21.8em;
-    margin-top: 5em;
-    margin-top: 5em;
+    object-fit: cover;
+    max-width: 12.3em;
+    min-height: 14em;
     margin-left: 2em;
     border: 1.5px solid var(--bordercolor);      
     border-radius: 10px;
@@ -97,7 +119,21 @@ header{
 p{
     text-align: left;
     max-width: 21em;
-    padding-left: 61px;
+    padding-left: 3em;
     font-size: 0.80em;
+    padding-right: 2em;
 
 }
+
+.link-c{
+    border: 1.5px solid var(--bordercolor); 
+    border-radius: 20px;
+    padding: 5px 5em;
+    margin-bottom: 2.5em;
+}
+
+.button{
+    margin-bottom: 0.5em;
+}
+
+
