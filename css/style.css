@@ -150,7 +150,7 @@ p{
     display: flex;
     flex-direction: column;
     transform: translate(-150px, 0);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     opacity: 0;
 }
 
@@ -162,6 +162,6 @@ p{
 }
 
 .icon{
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 50px;
+    max-height: 50px;
 }
