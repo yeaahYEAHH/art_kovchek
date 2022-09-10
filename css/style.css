@@ -13,19 +13,23 @@ html{
     scroll-padding-top: 25px;
 }
 
+.page > .first > header{
+    margin-top: 3.5em
+}
+
 .page{
     display: flex;
     justify-content: center;
-    max-width: 1250px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 2250px;
+    margin: 0 auto;
     color: var(--textcolor);
     font-family:  'Noto Sans', sans-serif; 
+    z-index: 1;
 }
 
 .section{
     text-align: center;
-    margin-top: 0.2em;
+    /*margin-top: 0.2em;*/
     font-size: 24px;
 }
 
@@ -37,6 +41,12 @@ ul{
 .link{
     text-decoration: none;
     color: inherit;
+}
+
+button{
+    color: inherit;
+    font-size: inherit;
+    border: none;
 }
 
 
@@ -68,10 +78,6 @@ header{
     padding-top: 15px;
 }
 
-
-
-
-
 /*Основное содержание*/
 .card{
     margin-top: 1em;
@@ -86,12 +92,6 @@ header{
     align-items: center;
 }
 
-button{
-    color: inherit;
-    background-color: inherit;
-    border: none;
-    font-size: inherit;
-}
 
 .title{
     margin-top: 4px;
@@ -134,6 +134,34 @@ p{
 
 .button{
     margin-bottom: 0.5em;
+    background-color: inherit;
 }
 
+.info{
+    float: left;
+}
 
+.block:hover .interractive{
+    transform: translate(0, 0); 
+    opacity: 1;
+}
+
+.interractive{
+    display: flex;
+    flex-direction: column;
+    transform: translate(-150px, 0);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.interractive-button{
+    margin: 3em 0 0 1em ;
+    padding: 1em 1em 1em 1em;
+    border-radius: 100%;
+    max-height: 98px;
+}
+
+.icon{
+    max-width: 40px;
+    max-height: 40px;
+}
